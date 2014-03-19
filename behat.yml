@@ -1,0 +1,9 @@
+default:
+  extensions:
+    Behat\Symfony2Extension\Extension:
+      mink_driver: true
+#      bundle: Add a bundle
+    Behat\MinkExtension\Extension:
+      base_url:   'http://localhost:8000'
+      goutte:     ~
+      default_session: 'symfony2'
